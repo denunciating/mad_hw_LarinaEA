@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/hangmanTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" O\n/|\\\n/ \\"
+        android:textSize="24sp"
+        android:typeface="monospace"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/wordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_ _ _ _ _"
+        android:textSize="32sp"
+        android:letterSpacing="1"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/wrongLettersTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ошибки: "
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/attemptsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Осталось попыток: 7"
+        android:textSize="18sp"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/letterEditText"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Буква"
+        android:inputType="text"
+        android:maxLength="1"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/guessButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Проверить"
+        android:textSize="18sp"
+        android:padding="15dp"/>
+
+</LinearLayout>
